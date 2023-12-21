@@ -1,0 +1,68 @@
+<html>
+<head>
+    <style>
+        *{margin: 0px; padding: 0px; box-sizing: border-box;}
+        marquee{color:black; font-family:Forte; border:solid 5px #539fe2;}
+        body{background-color: black;}
+    #main{position: relative; top:5rem; left:34%;  display: block; justify-content: center; align-items: center; border: solid 2px #539fe2; height: 35rem ; width:30rem; animation: move 2.3s ease-in-out; }
+    button{ position:relative; top:2rem; left:6%;width:100px;height: 100px; border-radius: 18px; color:rgb(83, 159, 226); background-color: black; font-size: x-large;}
+    #c{width:13rem;height: 2rem; border-radius: 20px; color:rgb(83, 159, 226);}
+    #ac{width:13rem; height: 2rem; border-radius: 20px; color:#539fe2;}
+    #txt{ background-color:rgb(255, 255, 255); width: 26rem; height: 4rem; border: solid 3px rgb(83, 159, 226); border-radius: 15px; font-size: x-large; text-align: right; position:relative; top:1rem; left:6%; padding: 10px;}
+     /*@keyframes move{
+        0%{}
+        50%{transform: rotate(360deg);}
+        100%{ transform: rotate(-360deg);} 
+        
+    }*/
+        
+    </style>
+</head>
+        <script>
+            function num(value)
+            {
+        document.getElementById("txt").value+=value;
+           }  
+           function eva()
+           {
+            document.getElementById("txt").value=eval(document.getElementById("txt").value);
+           }
+           function ac()
+           {
+            document.getElementById("txt").value="";
+           }
+           function cl()
+           {
+           let dig=document.getElementById("txt").value;
+           dig=dig.substr(0,dig.length-1);
+           document.getElementById("txt").value=dig;
+           }
+         
+
+        </script>
+            <font size=6><marquee direction="right" bgcolor="white" scrollamount="100" behavior="alternate" loop="2" text-align="center">CalCuLaTor</marquee></font>
+        </div>
+        <div id="main">
+        <input type="text" id="txt"><br>
+        <button id="a1" value="1" onclick="num(value);">1</button>
+        <button id="a2" value="2" onclick="num(value);">2</button>
+        <button id="a3" value="3" onclick="num(value);">3</button>
+        <button value="+" onclick="num(value);">+</button><br>
+        <button id="a4" value="4" onclick="num(value);">4</button>
+        <button id="a5" value="5" onclick="num(value);">5</button>
+        <button id="a6" value="6" onclick="num(value);">6</button>
+        <button value="-" onclick="num(value);">-</button><br>
+        <button id="a7" value="7" onclick="num(value);">7</button>
+        <button id="a8"value="8" onclick="num(value);">8</button>
+        <button id="a9" value="9" onclick="num(value);">9</button>
+        <button value="*" onclick="num(value);">*</button><br>
+        <button value="." onclick="num(value);">.</button>
+        <button id="a0"value="0"  onclick="num(value);">0</button>
+        <button id="equal" onclick="eva();">=</button>
+        <button value="/" onclick="num(value);">/</button><br>
+        <button id="c" value="c" onclick="cl();">C</button>
+        <button id="ac" value="ac" onclick="ac();">AC</button>
+    </div>
+    </body>
+
+</html>
