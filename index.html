@@ -1,20 +1,99 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        *{margin: 0px; padding: 0px; box-sizing: border-box;}
-        marquee{color:black; font-family:Forte; border:solid 5px #539fe2;}
-        body{background-color: black;}
-    #main{position: relative; top:5rem; left:34%;  display: block; justify-content: center; align-items: center; border: solid 2px #539fe2; height: 35rem ; width:30rem; animation: move 2.3s ease-in-out; }
-    button{ position:relative; top:2rem; left:6%;width:100px;height: 100px; border-radius: 18px; color:rgb(83, 159, 226); background-color: black; font-size: x-large;}
-    #c{width:13rem;height: 2rem; border-radius: 20px; color:rgb(83, 159, 226);}
-    #ac{width:13rem; height: 2rem; border-radius: 20px; color:#539fe2;}
-    #txt{ background-color:rgb(255, 255, 255); width: 26rem; height: 4rem; border: solid 3px rgb(83, 159, 226); border-radius: 15px; font-size: x-large; text-align: right; position:relative; top:1rem; left:6%; padding: 10px;}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+marquee {
+  color: black;
+  font-family: Forte;
+  border: solid 5px #539fe2;
+}
+body {
+  background-color: black;
+}
+#main {
+  position: relative;
+  top: 5rem;
+  left: 34%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px #539fe2;
+  height: 35rem;
+  width: 30rem;
+  animation: move 2.3s ease-in-out;
+}
+button {
+  position: relative;
+  top: 2rem;
+  left: 6%;
+  width: 100px;
+  height: 100px;
+  border-radius: 18px;
+  color: rgb(83, 159, 226);
+  background-color: black;
+  font-size: x-large;
+}
+#c {
+  width: 13rem;
+  height: 2rem;
+  border-radius: 20px;
+  color: rgb(83, 159, 226);
+}
+#ac {
+  width: 13rem;
+  height: 2rem;
+  border-radius: 20px;
+  color: #539fe2;
+}
+#txt {
+  background-color: rgb(255, 255, 255);
+  width: 26rem;
+  height: 4rem;
+  border: solid 3px rgb(83, 159, 226);
+  border-radius: 15px;
+  font-size: x-large;
+  text-align: right;
+  position: relative;
+  top: 1rem;
+  left: 6%;
+  padding: 10px;
+}
      /*@keyframes move{
         0%{}
         50%{transform: rotate(360deg);}
         100%{ transform: rotate(-360deg);} 
         
     }*/
+    @media screen and (max-width: 720px) {
+        #main {
+            height: 30rem;
+            width: 85vw;
+            top: 3rem;
+            left: 5vw;
+
+        }
+        #txt {
+            width: 74vw;
+        }
+        button {
+          width: 18vw;
+            height: 11vh;
+        }
+        #ac {
+    width: 22vw;
+    height: 7vh;
+}
+#c {
+    width: 54vw;
+    height: 7vh;
+}
+  
+}
         
     </style>
 </head>
